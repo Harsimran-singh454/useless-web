@@ -46,10 +46,11 @@ window.onload = () => {
         emoji.style.top = top + 'px';
     }
 
+    // ------------- Emoji Size Reducer ----------
     function reduceSize(){
         var width = parseInt(window.getComputedStyle(emoji).width);
         if (width > 10) {
-            emoji.style.width = (width - 12) + 'px';
+            emoji.style.width = (width - 30) + 'px';
         } else {
             gameContainer.style.background = "red";
             restart.style.display = "block";
@@ -65,9 +66,6 @@ window.onload = () => {
         }, 100);
         console.log(d);
     }
-
-    // startGame();
-    // reduceSize();
     
     // --------- Score Counter ------
     var count_holder = document.getElementById('count');
